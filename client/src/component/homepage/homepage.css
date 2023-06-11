@@ -1,0 +1,131 @@
+.text__info{
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: left; /* For Firefox prior 58.0 */
+    text-align-last: left;
+    color: #fff;
+}
+.home__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    justify-content:center;
+    align-items: center;
+}
+.space__left{
+    height: 37rem;
+    display: grid;
+    justify-content:center;
+    align-items:end;
+}
+
+.className{
+    margin-top: 5rem;
+}
+.set__puzzle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.round1{
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: left; /* For Firefox prior 58.0 */
+    text-align-last: left;
+    color: #fff;
+    margin-top: 6rem;
+}
+.round2__heading{
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: left; /* For Firefox prior 58.0 */
+    text-align-last: left;
+    color: #fff;
+    margin-top: 2rem;
+}
+.round1_head{
+    font-size: 2rem;
+}
+.ssl{
+    float: left;
+    margin-top: -5rem;
+    margin-right: 2rem;
+}
+.match__section{
+    display: grid;
+    grid-template-columns: 0.9fr 1.2fr;
+    column-gap: 2rem;
+}
+.round2__head{
+    font-size: 2rem;
+}
+.card-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.lead{
+    margin-left: 4rem;
+}
+.sslp{
+    display:none;
+}
+.mhs{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .home__grid{
+        grid-template-rows:  100px 100px;
+        column-gap: 1.25rem;
+    }
+    .set__puzzle{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .home__grid{
+        display: block;
+        
+    }
+    .text__info{
+        margin-bottom: var(--mb-2-5);
+        margin-top: 2rem;
+        max-width: none;
+        font-size: 9px;
+        text-align: justify; /* For Edge */
+        -moz-text-align-last: left; /* For Firefox prior 58.0 */
+        text-align-last: left;
+        color: #fff;
+    }
+    .space__left{
+        height: auto;
+       
+    }
+    .match__section{
+        display: block;
+        margin-top: 2rem;
+      
+    }
+    .round2__head{
+        font-size: 1.2rem;
+    }
+    .round2__description{
+        font-size: 0.8rem;
+    }
+    .round3__section{
+        display: block;
+    }
+
+  }
+  
+  
+  /* For small devices */
+  @media screen and (max-width: 390px) {
+    .home__grid{
+        grid-template-columns: 3fr 10px;
+        
+    }
+  }
